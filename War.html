@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WarFronts</title>
+  <link rel="stylesheet" href="War.css">
+  <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap" rel="stylesheet">
+  <script>
+    // JavaScript code goes here
+
+    // Styling the header and footer elements
+    const header = document.querySelector('header');
+    const footer = document.querySelector('footer');
+
+    header.style.backgroundColor = '#333';
+    header.style.color = 'white';
+    header.style.padding = '10px';
+    header.style.textAlign = 'left';
+
+    footer.style.backgroundColor = '#333';
+    footer.style.color = 'white';
+    footer.style.padding = '10px';
+    footer.style.textAlign = 'left';
+
+    
+    const warCards = document.querySelectorAll('.war-card');
+
+    warCards.forEach(card => {
+      card.style.border = '1px solid #ccc';
+      card.style.padding = '10px';
+      card.style.borderRadius = '5px';
+      card.style.transition = 'transform 0.2s ease-in-out';
+
+      card.addEventListener('mouseover', () => {
+        card.style.transform = 'scale(1.05)';
+        card.style.boxShadow = '0px 2px 5px rgba(0, 0, 0, 0.3)';
+      });
+
+      card.addEventListener('mouseout', () => {
+        card.style.transform = 'scale(1)';
+        card.style.boxShadow = 'none';
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>WarFronts: Traversing Historical and Modern Conflicts</h1>
+    <nav>
+      <ul>
+        <li><a href="War.html">Home</a></li>
+        <li><a href="present_war.html">Present Wars</a></li>
+        <li><a href="historical_war.html">Historical Wars</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href ="Form.html">Submit War Stories</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+      
+      <h1 id="Welcome">Welcome to WarFronts</h1> 
+      <p id="None">Explore the stories of past and present wars from around the world.</p>
+    
+
+    <section id="present-wars">
+      <h2>Present Wars</h2>
+      <div class="war-card">
+        <h3>Russo-Ukrainian War</h3>
+        <p>In early 2014, the Euromaidan protests led to the ousting of Ukraine's 
+          pro-Russian president, Viktor Yanukovych, and sparked ongoing conflicts with Russia. 
+          In 2022, Russia invaded Ukraine, leading to international condemnation and a devastating 
+          war with thousands of casualties.</p>
+        <a href="present_war.html" class="read-more-link">Read More</a>
+      </div>
+
+      <div class="war-card">
+        <h3>Sudan conflict</h3>
+        <p>Description of the war...</p>
+        <a href="present_war.html" class="read-more-link">Read More</a>
+      </div>
+    
+    
+      
+    </section>
+    
+    <section id="historical-wars">
+      <h2>Historical Wars</h2>
+      <div class="war-card">
+        <h3>Second Sino-Japanese War</h3>
+        <p>Description of the war...</p>
+        <a href="historical_war.html" class="read-more-link">Read More</a>
+      </div>
+
+      
+      <div class="war-card">
+        <h3>Vietnam War</h3>
+        <p>Description of the war...</p>
+        <a href="historical_war.html" class="read-more-link">Read More</a>
+      </div>
+      
+    </section>
+
+    <section id="resources">
+      <h2>Resources</h2>
+      <ul>
+        <li><a href="#">Book Title 1</a></li>
+        <li><a href="#">Book Title 2</a></li>
+        <li><a href="#">Article Title 1</a></li>
+        <li><a href="#">Article Title 2</a></li>
+        <li><a href="#">Historical Maps</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Warfronts. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

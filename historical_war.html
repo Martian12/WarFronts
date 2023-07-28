@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Present Wars</title>
+  <link rel="stylesheet" href="War.css">
+</head>
+<body>
+  <header>
+    <h1>WarFronts: Traversing Historical and Modern Conflicts</h1>
+    <nav>
+      <ul>
+        <li><a href="War.html">Home</a></li>
+        <li><a href="present_war.html">Present Wars</a></li>
+        <li><a href="historical_war.html">Historical Wars</a></li>
+        <li><a href="#resources">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="historical-wars">
+      <h2>Historical Wars</h2>
+      <div class="war-card">
+        <h3>Russian Invasion of Ukraine</h3>
+        <p>In February 2022, Russia invaded Ukraine, resulting in widespread conflict, displacement, and condemnation from the international community.</p>
+        <p>The invasion caused significant casualties, a refugee crisis, and economic repercussions</p>
+        <a href="RussianUkraine.html" class="read-more-link">Click here to read more.</a>
+      </div>
+
+      <div class="Afghanistan War">
+        <h3>War Name 2</h3>
+        <p>Description of the war...</p>
+        <a href="war2.html" class="read-more-link">Read More</a>
+      </div>
+
+      <!-- Add more war cards as needed -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Warfronts. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // JavaScript code goes here
+
+    // Styling the header and footer elements
+    const header = document.querySelector('header');
+    const footer = document.querySelector('footer');
+
+    header.style.backgroundColor = '#333';
+    header.style.color = 'white';
+    header.style.padding = '10px';
+    header.style.textAlign = 'left';
+
+    footer.style.backgroundColor = '#333';
+    footer.style.color = 'white';
+    footer.style.padding = '10px';
+    footer.style.textAlign = 'left';
+
+    // Adding interactivity to war cards
+    const warCards = document.querySelectorAll('.war-card');
+
+    warCards.forEach(card => {
+      card.style.border = '1px solid #ccc';
+      card.style.padding = '10px';
+      card.style.borderRadius = '5px';
+      card.style.transition = 'transform 0.2s ease-in-out';
+
+      card.addEventListener('mouseover', () => {
+        card.style.transform = 'scale(1.05)';
+        card.style.boxShadow = '0px 2px 5px rgba(0, 0, 0, 0.3)';
+      });
+
+      card.addEventListener('mouseout', () => {
+        card.style.transform = 'scale(1)';
+        card.style.boxShadow = 'none';
+      });
+    });
+  </script>
+</body>
+</html>
